@@ -1,0 +1,677 @@
+2023-12-24 14:36:31,501 INFO [main] o.m.d.cluster [SLF4JLogger.java:71] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2023-12-24 14:36:31,523 DEBUG [main] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING}]
+2023-12-24 14:36:31,540 INFO [main] o.m.d.cluster [SLF4JLogger.java:71] Cluster description not yet available. Waiting for 30000 ms before timing out
+2023-12-24 14:36:31,549 INFO [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.connection [SLF4JLogger.java:71] Opened connection [connectionId{localValue:2, serverValue:65}] to localhost:27017
+2023-12-24 14:36:31,549 INFO [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.connection [SLF4JLogger.java:71] Opened connection [connectionId{localValue:1, serverValue:64}] to localhost:27017
+2023-12-24 14:36:31,551 INFO [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:71] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=14117400}
+2023-12-24 14:36:31,552 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=14.1 ms, state=CONNECTED}]
+2023-12-24 14:36:31,552 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:36:31,563 INFO [main] o.m.d.connection [SLF4JLogger.java:71] Opened connection [connectionId{localValue:3, serverValue:66}] to localhost:27017
+2023-12-24 14:36:31,580 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "regexToId", "filter": {}, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 5 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,581 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 5 completed successfully in 12.37 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,612 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "regexToId", "filter": {"regex": "(0|1|2|3|4|5|6|7|8|9)+(#|.(0|1|2|3|4|5|6|7|8|9)*)"}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 6 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,614 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 6 completed successfully in 2.39 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,616 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "DFA", "filter": {"_id": {"$oid": "6570637e61209031d0f3466b"}}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 7 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,631 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 7 completed successfully in 16.31 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,651 INFO [main] o.e.D.NFAToDFA [NFAToDFA.java:185] (0|1|2|3|4|5|6|7|8|9)+(#|.(0|1|2|3|4|5|6|7|8|9)*)------>从mongoDB数据库中查询到DFA记录
+2023-12-24 14:36:31,669 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "regexToId", "filter": {"regex": "// | --"}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 8 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,672 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 8 completed successfully in 3.48 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,674 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "DFA", "filter": {"_id": {"$oid": "6570718d8cf78f0876c8a565"}}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 9 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,677 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 9 completed successfully in 2.87 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,677 INFO [main] o.e.D.NFAToDFA [NFAToDFA.java:185] // | -------->从mongoDB数据库中查询到DFA记录
+2023-12-24 14:36:31,679 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "regexToId", "filter": {"regex": "//|--"}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 10 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,681 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 10 completed successfully in 2.10 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,682 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "DFA", "filter": {"_id": {"$oid": "65716765c1c873588ef1ebf2"}}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 11 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,685 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 11 completed successfully in 3.06 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,685 INFO [main] o.e.D.NFAToDFA [NFAToDFA.java:185] //|-------->从mongoDB数据库中查询到DFA记录
+2023-12-24 14:36:31,686 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "regexToId", "filter": {"regex": "\\*\\*"}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 12 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,688 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 12 completed successfully in 1.63 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,689 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "DFA", "filter": {"_id": {"$oid": "6571677bc1c873588ef1ebf4"}}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 13 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,691 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 13 completed successfully in 1.62 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,692 INFO [main] o.e.D.NFAToDFA [NFAToDFA.java:185] \*\*------>从mongoDB数据库中查询到DFA记录
+2023-12-24 14:36:31,692 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "regexToId", "filter": {"regex": ";"}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 14 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,695 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 14 completed successfully in 2.34 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,696 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "DFA", "filter": {"_id": {"$oid": "65716869b3abe24021ede4f9"}}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 15 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,698 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 15 completed successfully in 2.05 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,699 INFO [main] o.e.D.NFAToDFA [NFAToDFA.java:185] ;------>从mongoDB数据库中查询到DFA记录
+2023-12-24 14:36:31,700 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "regexToId", "filter": {"regex": "\\("}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 16 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,702 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 16 completed successfully in 1.72 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,703 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "DFA", "filter": {"_id": {"$oid": "657168fc38f0907830891cf3"}}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 17 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,704 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 17 completed successfully in 1.68 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,704 INFO [main] o.e.D.NFAToDFA [NFAToDFA.java:185] \(------>从mongoDB数据库中查询到DFA记录
+2023-12-24 14:36:31,705 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "regexToId", "filter": {"regex": ","}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 18 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,708 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 18 completed successfully in 3.11 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,709 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "DFA", "filter": {"_id": {"$oid": "657168fc38f0907830891cf5"}}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 19 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,711 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 19 completed successfully in 1.96 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,712 INFO [main] o.e.D.NFAToDFA [NFAToDFA.java:185] ,------>从mongoDB数据库中查询到DFA记录
+2023-12-24 14:36:31,712 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "regexToId", "filter": {"regex": "\\)"}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 20 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,716 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 20 completed successfully in 3.37 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,717 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "DFA", "filter": {"_id": {"$oid": "65716cb89bf40204abf5439f"}}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 21 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,720 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 21 completed successfully in 3.06 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,721 INFO [main] o.e.D.NFAToDFA [NFAToDFA.java:185] \)------>从mongoDB数据库中查询到DFA记录
+2023-12-24 14:36:31,724 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "regexToId", "filter": {"regex": "-"}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 22 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,726 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 22 completed successfully in 2.61 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,727 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "DFA", "filter": {"_id": {"$oid": "65716cb89bf40204abf543a1"}}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 23 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,729 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 23 completed successfully in 1.98 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,730 INFO [main] o.e.D.NFAToDFA [NFAToDFA.java:185] ------->从mongoDB数据库中查询到DFA记录
+2023-12-24 14:36:31,731 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "regexToId", "filter": {"regex": "\\*"}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 24 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,733 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 24 completed successfully in 2.48 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,734 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "DFA", "filter": {"_id": {"$oid": "65716cb89bf40204abf543a3"}}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 25 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,735 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 25 completed successfully in 1.39 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,735 INFO [main] o.e.D.NFAToDFA [NFAToDFA.java:185] \*------>从mongoDB数据库中查询到DFA记录
+2023-12-24 14:36:31,736 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "regexToId", "filter": {"regex": "\\+"}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 26 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,737 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 26 completed successfully in 0.98 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,738 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "DFA", "filter": {"_id": {"$oid": "65716cb89bf40204abf543a5"}}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 27 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,739 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 27 completed successfully in 1.22 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,739 INFO [main] o.e.D.NFAToDFA [NFAToDFA.java:185] \+------>从mongoDB数据库中查询到DFA记录
+2023-12-24 14:36:31,741 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "regexToId", "filter": {"regex": "/"}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 28 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,742 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 28 completed successfully in 1.68 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,743 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "DFA", "filter": {"_id": {"$oid": "65716cb89bf40204abf543a7"}}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 29 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,744 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 29 completed successfully in 1.06 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,744 INFO [main] o.e.D.NFAToDFA [NFAToDFA.java:185] /------>从mongoDB数据库中查询到DFA记录
+2023-12-24 14:36:31,745 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "regexToId", "filter": {"regex": "(a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z|A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z)+((a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z|A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z)|(0|1|2|3|4|5|6|7|8|9))*"}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 30 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,747 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 30 completed successfully in 1.92 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,748 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "DFA", "filter": {"_id": {"$oid": "657188a90feb176963b7448a"}}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 31 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,750 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 31 completed successfully in 1.66 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,751 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "fs.files", "filter": {"_id": {"$oid": "657188a90feb176963b7448a"}}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 32 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,753 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 32 completed successfully in 1.89 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,754 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "fs.chunks", "filter": {"files_id": {"$oid": "657188a90feb176963b7448a"}, "n": 0}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 33 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,767 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 33 completed successfully in 13.70 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,770 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "fs.chunks", "filter": {"files_id": {"$oid": "657188a90feb176963b7448a"}, "n": 1}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 34 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,783 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 34 completed successfully in 12.81 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,785 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "fs.chunks", "filter": {"files_id": {"$oid": "657188a90feb176963b7448a"}, "n": 2}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 35 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,799 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 35 completed successfully in 13.33 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,803 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "fs.chunks", "filter": {"files_id": {"$oid": "657188a90feb176963b7448a"}, "n": 3}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 36 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,817 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 36 completed successfully in 13.70 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,820 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "fs.chunks", "filter": {"files_id": {"$oid": "657188a90feb176963b7448a"}, "n": 4}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 37 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,832 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 37 completed successfully in 12.49 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,834 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "fs.chunks", "filter": {"files_id": {"$oid": "657188a90feb176963b7448a"}, "n": 5}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 38 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,847 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 38 completed successfully in 12.36 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,849 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "fs.chunks", "filter": {"files_id": {"$oid": "657188a90feb176963b7448a"}, "n": 6}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 39 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,861 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 39 completed successfully in 11.95 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,863 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "fs.chunks", "filter": {"files_id": {"$oid": "657188a90feb176963b7448a"}, "n": 7}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 40 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,876 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 40 completed successfully in 13.40 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,878 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "fs.chunks", "filter": {"files_id": {"$oid": "657188a90feb176963b7448a"}, "n": 8}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 41 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,891 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 41 completed successfully in 12.27 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,899 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "fs.chunks", "filter": {"files_id": {"$oid": "657188a90feb176963b7448a"}, "n": 9}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 42 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,916 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 42 completed successfully in 17.04 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,918 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "fs.chunks", "filter": {"files_id": {"$oid": "657188a90feb176963b7448a"}, "n": 10}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 43 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,931 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 43 completed successfully in 12.54 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,933 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "fs.chunks", "filter": {"files_id": {"$oid": "657188a90feb176963b7448a"}, "n": 11}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 44 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,946 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 44 completed successfully in 13.57 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,948 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "fs.chunks", "filter": {"files_id": {"$oid": "657188a90feb176963b7448a"}, "n": 12}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 45 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,959 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 45 completed successfully in 12.06 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,962 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "fs.chunks", "filter": {"files_id": {"$oid": "657188a90feb176963b7448a"}, "n": 13}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 46 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,976 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 46 completed successfully in 14.00 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,979 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "fs.chunks", "filter": {"files_id": {"$oid": "657188a90feb176963b7448a"}, "n": 14}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 47 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,992 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 47 completed successfully in 13.68 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:31,995 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "fs.chunks", "filter": {"files_id": {"$oid": "657188a90feb176963b7448a"}, "n": 15}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 48 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:32,008 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 48 completed successfully in 13.01 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:32,009 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "fs.chunks", "filter": {"files_id": {"$oid": "657188a90feb176963b7448a"}, "n": 16}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 49 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:32,023 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 49 completed successfully in 12.90 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:32,036 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "fs.chunks", "filter": {"files_id": {"$oid": "657188a90feb176963b7448a"}, "n": 17}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 50 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:32,044 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 50 completed successfully in 8.54 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:32,269 INFO [main] o.e.D.NFAToDFA [NFAToDFA.java:225] (a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z|A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z)+((a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z|A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z)|(0|1|2|3|4|5|6|7|8|9))*------>成功从gridFS的文件分块chunks中组装回DFA
+2023-12-24 14:36:32,271 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "regexToId", "filter": {"regex": "(' '|\t|\n|\r|\f)+"}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 51 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:32,272 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 51 completed successfully in 1.47 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:32,273 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "DFA", "filter": {"_id": {"$oid": "65755838aaf9191904a3e16e"}}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 52 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:32,275 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 52 completed successfully in 2.44 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:32,277 INFO [main] o.e.D.NFAToDFA [NFAToDFA.java:185] (' '|	|
+||)+------>从mongoDB数据库中查询到DFA记录
+2023-12-24 14:36:32,278 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "regexToId", "filter": {"regex": "="}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 53 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:32,279 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 53 completed successfully in 1.31 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:32,280 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"find": "DFA", "filter": {"_id": {"$oid": "6583eb67a1775c7a984bc7cf"}}, "limit": 1, "singleBatch": true, "$db": "compile", "lsid": {"id": {"$binary": {"base64": "1eOO9/9RTQmDrrlBfR1H9w==", "subType": "04"}}}}' with request id 54 to database compile on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:32,282 DEBUG [main] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 54 completed successfully in 1.80 ms on connection [connectionId{localValue:3, serverValue:66}] to server localhost:27017
+2023-12-24 14:36:32,282 INFO [main] o.e.D.NFAToDFA [NFAToDFA.java:185] =------>从mongoDB数据库中查询到DFA记录
+2023-12-24 14:36:32,312 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'l' matches DFA.
+2023-12-24 14:36:32,314 INFO [main] o.e.L.Lexer [Lexer.java:89] l的类型为ID
+2023-12-24 14:36:32,315 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'le' matches DFA.
+2023-12-24 14:36:32,315 INFO [main] o.e.L.Lexer [Lexer.java:89] le的类型为ID
+2023-12-24 14:36:32,316 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'let' matches DFA.
+2023-12-24 14:36:32,317 INFO [main] o.e.L.Lexer [Lexer.java:89] let的类型为LET
+2023-12-24 14:36:32,323 INFO [main] o.e.L.Lexer [Lexer.java:70] Input ' ' matches DFA.
+2023-12-24 14:36:32,323 INFO [main] o.e.L.Lexer [Lexer.java:89]  的类型为WHITE_SPACE
+2023-12-24 14:36:32,326 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'a' matches DFA.
+2023-12-24 14:36:32,327 INFO [main] o.e.L.Lexer [Lexer.java:89] a的类型为ID
+2023-12-24 14:36:32,331 INFO [main] o.e.L.Lexer [Lexer.java:70] Input ' ' matches DFA.
+2023-12-24 14:36:32,331 INFO [main] o.e.L.Lexer [Lexer.java:89]  的类型为WHITE_SPACE
+2023-12-24 14:36:32,332 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '=' matches DFA.
+2023-12-24 14:36:32,332 INFO [main] o.e.L.Lexer [Lexer.java:89] =的类型为EQUALS
+2023-12-24 14:36:32,332 INFO [main] o.e.L.Lexer [Lexer.java:70] Input ' ' matches DFA.
+2023-12-24 14:36:32,333 INFO [main] o.e.L.Lexer [Lexer.java:89]  的类型为WHITE_SPACE
+2023-12-24 14:36:32,333 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '3' matches DFA.
+2023-12-24 14:36:32,333 INFO [main] o.e.L.Lexer [Lexer.java:89] 3的类型为CONST_ID
+2023-12-24 14:36:32,333 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '36' matches DFA.
+2023-12-24 14:36:32,334 INFO [main] o.e.L.Lexer [Lexer.java:89] 36的类型为CONST_ID
+2023-12-24 14:36:32,334 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '360' matches DFA.
+2023-12-24 14:36:32,334 INFO [main] o.e.L.Lexer [Lexer.java:89] 360的类型为CONST_ID
+2023-12-24 14:36:32,335 INFO [main] o.e.L.Lexer [Lexer.java:70] Input ';' matches DFA.
+2023-12-24 14:36:32,335 INFO [main] o.e.L.Lexer [Lexer.java:89] ;的类型为SEMICO
+2023-12-24 14:36:32,337 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '' matches DFA.
+2023-12-24 14:36:32,337 INFO [main] o.e.L.Lexer [Lexer.java:89] 的类型为WHITE_SPACE
+2023-12-24 14:36:32,338 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '
+' matches DFA.
+2023-12-24 14:36:32,338 INFO [main] o.e.L.Lexer [Lexer.java:89] 
+的类型为WHITE_SPACE
+2023-12-24 14:36:32,338 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'l' matches DFA.
+2023-12-24 14:36:32,338 INFO [main] o.e.L.Lexer [Lexer.java:89] l的类型为ID
+2023-12-24 14:36:32,338 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'le' matches DFA.
+2023-12-24 14:36:32,338 INFO [main] o.e.L.Lexer [Lexer.java:89] le的类型为ID
+2023-12-24 14:36:32,338 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'let' matches DFA.
+2023-12-24 14:36:32,338 INFO [main] o.e.L.Lexer [Lexer.java:89] let的类型为LET
+2023-12-24 14:36:32,339 INFO [main] o.e.L.Lexer [Lexer.java:70] Input ' ' matches DFA.
+2023-12-24 14:36:32,339 INFO [main] o.e.L.Lexer [Lexer.java:89]  的类型为WHITE_SPACE
+2023-12-24 14:36:32,339 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'b' matches DFA.
+2023-12-24 14:36:32,339 INFO [main] o.e.L.Lexer [Lexer.java:89] b的类型为ID
+2023-12-24 14:36:32,339 INFO [main] o.e.L.Lexer [Lexer.java:70] Input ' ' matches DFA.
+2023-12-24 14:36:32,340 INFO [main] o.e.L.Lexer [Lexer.java:89]  的类型为WHITE_SPACE
+2023-12-24 14:36:32,341 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '=' matches DFA.
+2023-12-24 14:36:32,341 INFO [main] o.e.L.Lexer [Lexer.java:89] =的类型为EQUALS
+2023-12-24 14:36:32,342 INFO [main] o.e.L.Lexer [Lexer.java:70] Input ' ' matches DFA.
+2023-12-24 14:36:32,342 INFO [main] o.e.L.Lexer [Lexer.java:89]  的类型为WHITE_SPACE
+2023-12-24 14:36:32,342 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'a' matches DFA.
+2023-12-24 14:36:32,342 INFO [main] o.e.L.Lexer [Lexer.java:89] a的类型为ID
+2023-12-24 14:36:32,343 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '-' matches DFA.
+2023-12-24 14:36:32,343 INFO [main] o.e.L.Lexer [Lexer.java:89] -的类型为MINUS
+2023-12-24 14:36:32,344 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '1' matches DFA.
+2023-12-24 14:36:32,344 INFO [main] o.e.L.Lexer [Lexer.java:89] 1的类型为CONST_ID
+2023-12-24 14:36:32,344 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '12' matches DFA.
+2023-12-24 14:36:32,344 INFO [main] o.e.L.Lexer [Lexer.java:89] 12的类型为CONST_ID
+2023-12-24 14:36:32,344 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '120' matches DFA.
+2023-12-24 14:36:32,344 INFO [main] o.e.L.Lexer [Lexer.java:89] 120的类型为CONST_ID
+2023-12-24 14:36:32,344 INFO [main] o.e.L.Lexer [Lexer.java:70] Input ';' matches DFA.
+2023-12-24 14:36:32,344 INFO [main] o.e.L.Lexer [Lexer.java:89] ;的类型为SEMICO
+2023-12-24 14:36:32,345 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '' matches DFA.
+2023-12-24 14:36:32,345 INFO [main] o.e.L.Lexer [Lexer.java:89] 的类型为WHITE_SPACE
+2023-12-24 14:36:32,345 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '
+' matches DFA.
+2023-12-24 14:36:32,346 INFO [main] o.e.L.Lexer [Lexer.java:89] 
+的类型为WHITE_SPACE
+2023-12-24 14:36:32,346 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'l' matches DFA.
+2023-12-24 14:36:32,346 INFO [main] o.e.L.Lexer [Lexer.java:89] l的类型为ID
+2023-12-24 14:36:32,346 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'le' matches DFA.
+2023-12-24 14:36:32,346 INFO [main] o.e.L.Lexer [Lexer.java:89] le的类型为ID
+2023-12-24 14:36:32,346 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'let' matches DFA.
+2023-12-24 14:36:32,346 INFO [main] o.e.L.Lexer [Lexer.java:89] let的类型为LET
+2023-12-24 14:36:32,346 INFO [main] o.e.L.Lexer [Lexer.java:70] Input ' ' matches DFA.
+2023-12-24 14:36:32,346 INFO [main] o.e.L.Lexer [Lexer.java:89]  的类型为WHITE_SPACE
+2023-12-24 14:36:32,346 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'o' matches DFA.
+2023-12-24 14:36:32,346 INFO [main] o.e.L.Lexer [Lexer.java:89] o的类型为ID
+2023-12-24 14:36:32,347 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'or' matches DFA.
+2023-12-24 14:36:32,347 INFO [main] o.e.L.Lexer [Lexer.java:89] or的类型为ID
+2023-12-24 14:36:32,347 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'ori' matches DFA.
+2023-12-24 14:36:32,347 INFO [main] o.e.L.Lexer [Lexer.java:89] ori的类型为ID
+2023-12-24 14:36:32,347 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'orig' matches DFA.
+2023-12-24 14:36:32,347 INFO [main] o.e.L.Lexer [Lexer.java:89] orig的类型为ID
+2023-12-24 14:36:32,347 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'origi' matches DFA.
+2023-12-24 14:36:32,347 INFO [main] o.e.L.Lexer [Lexer.java:89] origi的类型为ID
+2023-12-24 14:36:32,347 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'origin' matches DFA.
+2023-12-24 14:36:32,347 INFO [main] o.e.L.Lexer [Lexer.java:89] origin的类型为ORIGIN
+2023-12-24 14:36:32,348 INFO [main] o.e.L.Lexer [Lexer.java:70] Input ' ' matches DFA.
+2023-12-24 14:36:32,348 INFO [main] o.e.L.Lexer [Lexer.java:89]  的类型为WHITE_SPACE
+2023-12-24 14:36:32,348 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '=' matches DFA.
+2023-12-24 14:36:32,348 INFO [main] o.e.L.Lexer [Lexer.java:89] =的类型为EQUALS
+2023-12-24 14:36:32,348 INFO [main] o.e.L.Lexer [Lexer.java:70] Input ' ' matches DFA.
+2023-12-24 14:36:32,348 INFO [main] o.e.L.Lexer [Lexer.java:89]  的类型为WHITE_SPACE
+2023-12-24 14:36:32,348 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '2' matches DFA.
+2023-12-24 14:36:32,348 INFO [main] o.e.L.Lexer [Lexer.java:89] 2的类型为CONST_ID
+2023-12-24 14:36:32,348 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '20' matches DFA.
+2023-12-24 14:36:32,348 INFO [main] o.e.L.Lexer [Lexer.java:89] 20的类型为CONST_ID
+2023-12-24 14:36:32,349 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '200' matches DFA.
+2023-12-24 14:36:32,349 INFO [main] o.e.L.Lexer [Lexer.java:89] 200的类型为CONST_ID
+2023-12-24 14:36:32,349 INFO [main] o.e.L.Lexer [Lexer.java:70] Input ';' matches DFA.
+2023-12-24 14:36:32,349 INFO [main] o.e.L.Lexer [Lexer.java:89] ;的类型为SEMICO
+2023-12-24 14:36:32,349 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '' matches DFA.
+2023-12-24 14:36:32,349 INFO [main] o.e.L.Lexer [Lexer.java:89] 的类型为WHITE_SPACE
+2023-12-24 14:36:32,349 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '
+' matches DFA.
+2023-12-24 14:36:32,349 INFO [main] o.e.L.Lexer [Lexer.java:89] 
+的类型为WHITE_SPACE
+2023-12-24 14:36:32,349 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'o' matches DFA.
+2023-12-24 14:36:32,350 INFO [main] o.e.L.Lexer [Lexer.java:89] o的类型为ID
+2023-12-24 14:36:32,350 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'or' matches DFA.
+2023-12-24 14:36:32,350 INFO [main] o.e.L.Lexer [Lexer.java:89] or的类型为ID
+2023-12-24 14:36:32,350 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'ori' matches DFA.
+2023-12-24 14:36:32,350 INFO [main] o.e.L.Lexer [Lexer.java:89] ori的类型为ID
+2023-12-24 14:36:32,350 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'orig' matches DFA.
+2023-12-24 14:36:32,350 INFO [main] o.e.L.Lexer [Lexer.java:89] orig的类型为ID
+2023-12-24 14:36:32,350 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'origi' matches DFA.
+2023-12-24 14:36:32,350 INFO [main] o.e.L.Lexer [Lexer.java:89] origi的类型为ID
+2023-12-24 14:36:32,350 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'origin' matches DFA.
+2023-12-24 14:36:32,350 INFO [main] o.e.L.Lexer [Lexer.java:89] origin的类型为ORIGIN
+2023-12-24 14:36:32,351 INFO [main] o.e.L.Lexer [Lexer.java:70] Input ' ' matches DFA.
+2023-12-24 14:36:32,351 INFO [main] o.e.L.Lexer [Lexer.java:89]  的类型为WHITE_SPACE
+2023-12-24 14:36:32,351 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'i' matches DFA.
+2023-12-24 14:36:32,351 INFO [main] o.e.L.Lexer [Lexer.java:89] i的类型为ID
+2023-12-24 14:36:32,351 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'is' matches DFA.
+2023-12-24 14:36:32,351 INFO [main] o.e.L.Lexer [Lexer.java:89] is的类型为IS
+2023-12-24 14:36:32,351 INFO [main] o.e.L.Lexer [Lexer.java:70] Input ' ' matches DFA.
+2023-12-24 14:36:32,351 INFO [main] o.e.L.Lexer [Lexer.java:89]  的类型为WHITE_SPACE
+2023-12-24 14:36:32,351 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '(' matches DFA.
+2023-12-24 14:36:32,351 INFO [main] o.e.L.Lexer [Lexer.java:89] (的类型为L_BRACKET
+2023-12-24 14:36:32,352 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'a' matches DFA.
+2023-12-24 14:36:32,352 INFO [main] o.e.L.Lexer [Lexer.java:89] a的类型为ID
+2023-12-24 14:36:32,352 INFO [main] o.e.L.Lexer [Lexer.java:70] Input ',' matches DFA.
+2023-12-24 14:36:32,352 INFO [main] o.e.L.Lexer [Lexer.java:89] ,的类型为COMMA
+2023-12-24 14:36:32,352 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'b' matches DFA.
+2023-12-24 14:36:32,352 INFO [main] o.e.L.Lexer [Lexer.java:89] b的类型为ID
+2023-12-24 14:36:32,352 INFO [main] o.e.L.Lexer [Lexer.java:70] Input ')' matches DFA.
+2023-12-24 14:36:32,352 INFO [main] o.e.L.Lexer [Lexer.java:89] )的类型为R_BRACKET
+2023-12-24 14:36:32,353 INFO [main] o.e.L.Lexer [Lexer.java:70] Input ';' matches DFA.
+2023-12-24 14:36:32,353 INFO [main] o.e.L.Lexer [Lexer.java:89] ;的类型为SEMICO
+2023-12-24 14:36:32,353 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '' matches DFA.
+2023-12-24 14:36:32,353 INFO [main] o.e.L.Lexer [Lexer.java:89] 的类型为WHITE_SPACE
+2023-12-24 14:36:32,353 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '
+' matches DFA.
+2023-12-24 14:36:32,353 INFO [main] o.e.L.Lexer [Lexer.java:89] 
+的类型为WHITE_SPACE
+2023-12-24 14:36:32,353 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '
+' matches DFA.
+2023-12-24 14:36:32,353 INFO [main] o.e.L.Lexer [Lexer.java:89] 
+的类型为WHITE_SPACE
+2023-12-24 14:36:32,354 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '
+
+' matches DFA.
+2023-12-24 14:36:32,354 INFO [main] o.e.L.Lexer [Lexer.java:89] 
+
+的类型为WHITE_SPACE
+2023-12-24 14:36:32,354 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 's' matches DFA.
+2023-12-24 14:36:32,354 INFO [main] o.e.L.Lexer [Lexer.java:89] s的类型为ID
+2023-12-24 14:36:32,354 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'sc' matches DFA.
+2023-12-24 14:36:32,354 INFO [main] o.e.L.Lexer [Lexer.java:89] sc的类型为ID
+2023-12-24 14:36:32,354 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'sca' matches DFA.
+2023-12-24 14:36:32,354 INFO [main] o.e.L.Lexer [Lexer.java:89] sca的类型为ID
+2023-12-24 14:36:32,354 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'scal' matches DFA.
+2023-12-24 14:36:32,354 INFO [main] o.e.L.Lexer [Lexer.java:89] scal的类型为ID
+2023-12-24 14:36:32,354 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'scale' matches DFA.
+2023-12-24 14:36:32,354 INFO [main] o.e.L.Lexer [Lexer.java:89] scale的类型为SCALE
+2023-12-24 14:36:32,354 INFO [main] o.e.L.Lexer [Lexer.java:70] Input ' ' matches DFA.
+2023-12-24 14:36:32,355 INFO [main] o.e.L.Lexer [Lexer.java:89]  的类型为WHITE_SPACE
+2023-12-24 14:36:32,355 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'i' matches DFA.
+2023-12-24 14:36:32,355 INFO [main] o.e.L.Lexer [Lexer.java:89] i的类型为ID
+2023-12-24 14:36:32,355 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'is' matches DFA.
+2023-12-24 14:36:32,355 INFO [main] o.e.L.Lexer [Lexer.java:89] is的类型为IS
+2023-12-24 14:36:32,355 INFO [main] o.e.L.Lexer [Lexer.java:70] Input ' ' matches DFA.
+2023-12-24 14:36:32,355 INFO [main] o.e.L.Lexer [Lexer.java:89]  的类型为WHITE_SPACE
+2023-12-24 14:36:32,355 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '(' matches DFA.
+2023-12-24 14:36:32,355 INFO [main] o.e.L.Lexer [Lexer.java:89] (的类型为L_BRACKET
+2023-12-24 14:36:32,355 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '1' matches DFA.
+2023-12-24 14:36:32,355 INFO [main] o.e.L.Lexer [Lexer.java:89] 1的类型为CONST_ID
+2023-12-24 14:36:32,356 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '10' matches DFA.
+2023-12-24 14:36:32,356 INFO [main] o.e.L.Lexer [Lexer.java:89] 10的类型为CONST_ID
+2023-12-24 14:36:32,356 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '100' matches DFA.
+2023-12-24 14:36:32,356 INFO [main] o.e.L.Lexer [Lexer.java:89] 100的类型为CONST_ID
+2023-12-24 14:36:32,356 INFO [main] o.e.L.Lexer [Lexer.java:70] Input ',' matches DFA.
+2023-12-24 14:36:32,356 INFO [main] o.e.L.Lexer [Lexer.java:89] ,的类型为COMMA
+2023-12-24 14:36:32,356 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '1' matches DFA.
+2023-12-24 14:36:32,356 INFO [main] o.e.L.Lexer [Lexer.java:89] 1的类型为CONST_ID
+2023-12-24 14:36:32,356 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '10' matches DFA.
+2023-12-24 14:36:32,356 INFO [main] o.e.L.Lexer [Lexer.java:89] 10的类型为CONST_ID
+2023-12-24 14:36:32,357 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '100' matches DFA.
+2023-12-24 14:36:32,357 INFO [main] o.e.L.Lexer [Lexer.java:89] 100的类型为CONST_ID
+2023-12-24 14:36:32,357 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '/' matches DFA.
+2023-12-24 14:36:32,357 INFO [main] o.e.L.Lexer [Lexer.java:89] /的类型为DIV
+2023-12-24 14:36:32,357 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '3' matches DFA.
+2023-12-24 14:36:32,357 INFO [main] o.e.L.Lexer [Lexer.java:89] 3的类型为CONST_ID
+2023-12-24 14:36:32,358 INFO [main] o.e.L.Lexer [Lexer.java:70] Input ')' matches DFA.
+2023-12-24 14:36:32,358 INFO [main] o.e.L.Lexer [Lexer.java:89] )的类型为R_BRACKET
+2023-12-24 14:36:32,358 INFO [main] o.e.L.Lexer [Lexer.java:70] Input ';' matches DFA.
+2023-12-24 14:36:32,358 INFO [main] o.e.L.Lexer [Lexer.java:89] ;的类型为SEMICO
+2023-12-24 14:36:32,358 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '' matches DFA.
+2023-12-24 14:36:32,358 INFO [main] o.e.L.Lexer [Lexer.java:89] 的类型为WHITE_SPACE
+2023-12-24 14:36:32,358 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '
+' matches DFA.
+2023-12-24 14:36:32,358 INFO [main] o.e.L.Lexer [Lexer.java:89] 
+的类型为WHITE_SPACE
+2023-12-24 14:36:32,359 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '
+' matches DFA.
+2023-12-24 14:36:32,359 INFO [main] o.e.L.Lexer [Lexer.java:89] 
+的类型为WHITE_SPACE
+2023-12-24 14:36:32,359 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '
+
+' matches DFA.
+2023-12-24 14:36:32,359 INFO [main] o.e.L.Lexer [Lexer.java:89] 
+
+的类型为WHITE_SPACE
+2023-12-24 14:36:32,359 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'r' matches DFA.
+2023-12-24 14:36:32,359 INFO [main] o.e.L.Lexer [Lexer.java:89] r的类型为ID
+2023-12-24 14:36:32,359 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'ro' matches DFA.
+2023-12-24 14:36:32,359 INFO [main] o.e.L.Lexer [Lexer.java:89] ro的类型为ID
+2023-12-24 14:36:32,359 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'rot' matches DFA.
+2023-12-24 14:36:32,359 INFO [main] o.e.L.Lexer [Lexer.java:89] rot的类型为ROT
+2023-12-24 14:36:32,359 INFO [main] o.e.L.Lexer [Lexer.java:70] Input ' ' matches DFA.
+2023-12-24 14:36:32,359 INFO [main] o.e.L.Lexer [Lexer.java:89]  的类型为WHITE_SPACE
+2023-12-24 14:36:32,360 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'i' matches DFA.
+2023-12-24 14:36:32,360 INFO [main] o.e.L.Lexer [Lexer.java:89] i的类型为ID
+2023-12-24 14:36:32,360 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'is' matches DFA.
+2023-12-24 14:36:32,360 INFO [main] o.e.L.Lexer [Lexer.java:89] is的类型为IS
+2023-12-24 14:36:32,360 INFO [main] o.e.L.Lexer [Lexer.java:70] Input ' ' matches DFA.
+2023-12-24 14:36:32,360 INFO [main] o.e.L.Lexer [Lexer.java:89]  的类型为WHITE_SPACE
+2023-12-24 14:36:32,360 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'P' matches DFA.
+2023-12-24 14:36:32,360 INFO [main] o.e.L.Lexer [Lexer.java:89] P的类型为ID
+2023-12-24 14:36:32,360 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'PI' matches DFA.
+2023-12-24 14:36:32,360 INFO [main] o.e.L.Lexer [Lexer.java:89] PI的类型为CONST_ID
+2023-12-24 14:36:32,360 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '/' matches DFA.
+2023-12-24 14:36:32,360 INFO [main] o.e.L.Lexer [Lexer.java:89] /的类型为DIV
+2023-12-24 14:36:32,360 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '2' matches DFA.
+2023-12-24 14:36:32,362 INFO [main] o.e.L.Lexer [Lexer.java:89] 2的类型为CONST_ID
+2023-12-24 14:36:32,362 INFO [main] o.e.L.Lexer [Lexer.java:70] Input ';' matches DFA.
+2023-12-24 14:36:32,362 INFO [main] o.e.L.Lexer [Lexer.java:89] ;的类型为SEMICO
+2023-12-24 14:36:32,362 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '' matches DFA.
+2023-12-24 14:36:32,362 INFO [main] o.e.L.Lexer [Lexer.java:89] 的类型为WHITE_SPACE
+2023-12-24 14:36:32,362 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '
+' matches DFA.
+2023-12-24 14:36:32,362 INFO [main] o.e.L.Lexer [Lexer.java:89] 
+的类型为WHITE_SPACE
+2023-12-24 14:36:32,362 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '
+' matches DFA.
+2023-12-24 14:36:32,363 INFO [main] o.e.L.Lexer [Lexer.java:89] 
+的类型为WHITE_SPACE
+2023-12-24 14:36:32,363 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '
+
+' matches DFA.
+2023-12-24 14:36:32,363 INFO [main] o.e.L.Lexer [Lexer.java:89] 
+
+的类型为WHITE_SPACE
+2023-12-24 14:36:32,363 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'f' matches DFA.
+2023-12-24 14:36:32,363 INFO [main] o.e.L.Lexer [Lexer.java:89] f的类型为ID
+2023-12-24 14:36:32,363 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'fo' matches DFA.
+2023-12-24 14:36:32,363 INFO [main] o.e.L.Lexer [Lexer.java:89] fo的类型为ID
+2023-12-24 14:36:32,363 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'for' matches DFA.
+2023-12-24 14:36:32,363 INFO [main] o.e.L.Lexer [Lexer.java:89] for的类型为FOR
+2023-12-24 14:36:32,363 INFO [main] o.e.L.Lexer [Lexer.java:70] Input ' ' matches DFA.
+2023-12-24 14:36:32,363 INFO [main] o.e.L.Lexer [Lexer.java:89]  的类型为WHITE_SPACE
+2023-12-24 14:36:32,364 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 't' matches DFA.
+2023-12-24 14:36:32,364 INFO [main] o.e.L.Lexer [Lexer.java:89] t的类型为T
+2023-12-24 14:36:32,364 INFO [main] o.e.L.Lexer [Lexer.java:70] Input ' ' matches DFA.
+2023-12-24 14:36:32,364 INFO [main] o.e.L.Lexer [Lexer.java:89]  的类型为WHITE_SPACE
+2023-12-24 14:36:32,364 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'f' matches DFA.
+2023-12-24 14:36:32,364 INFO [main] o.e.L.Lexer [Lexer.java:89] f的类型为ID
+2023-12-24 14:36:32,364 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'fr' matches DFA.
+2023-12-24 14:36:32,364 INFO [main] o.e.L.Lexer [Lexer.java:89] fr的类型为ID
+2023-12-24 14:36:32,364 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'fro' matches DFA.
+2023-12-24 14:36:32,364 INFO [main] o.e.L.Lexer [Lexer.java:89] fro的类型为ID
+2023-12-24 14:36:32,364 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'from' matches DFA.
+2023-12-24 14:36:32,365 INFO [main] o.e.L.Lexer [Lexer.java:89] from的类型为FROM
+2023-12-24 14:36:32,365 INFO [main] o.e.L.Lexer [Lexer.java:70] Input ' ' matches DFA.
+2023-12-24 14:36:32,365 INFO [main] o.e.L.Lexer [Lexer.java:89]  的类型为WHITE_SPACE
+2023-12-24 14:36:32,365 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '0' matches DFA.
+2023-12-24 14:36:32,365 INFO [main] o.e.L.Lexer [Lexer.java:89] 0的类型为CONST_ID
+2023-12-24 14:36:32,365 INFO [main] o.e.L.Lexer [Lexer.java:70] Input ' ' matches DFA.
+2023-12-24 14:36:32,365 INFO [main] o.e.L.Lexer [Lexer.java:89]  的类型为WHITE_SPACE
+2023-12-24 14:36:32,366 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 't' matches DFA.
+2023-12-24 14:36:32,366 INFO [main] o.e.L.Lexer [Lexer.java:89] t的类型为T
+2023-12-24 14:36:32,366 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'to' matches DFA.
+2023-12-24 14:36:32,366 INFO [main] o.e.L.Lexer [Lexer.java:89] to的类型为TO
+2023-12-24 14:36:32,366 INFO [main] o.e.L.Lexer [Lexer.java:70] Input ' ' matches DFA.
+2023-12-24 14:36:32,366 INFO [main] o.e.L.Lexer [Lexer.java:89]  的类型为WHITE_SPACE
+2023-12-24 14:36:32,366 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '2' matches DFA.
+2023-12-24 14:36:32,366 INFO [main] o.e.L.Lexer [Lexer.java:89] 2的类型为CONST_ID
+2023-12-24 14:36:32,366 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '*' matches DFA.
+2023-12-24 14:36:32,367 INFO [main] o.e.L.Lexer [Lexer.java:89] *的类型为MUL
+2023-12-24 14:36:32,367 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'p' matches DFA.
+2023-12-24 14:36:32,367 INFO [main] o.e.L.Lexer [Lexer.java:89] p的类型为ID
+2023-12-24 14:36:32,367 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'pi' matches DFA.
+2023-12-24 14:36:32,367 INFO [main] o.e.L.Lexer [Lexer.java:89] pi的类型为CONST_ID
+2023-12-24 14:36:32,367 INFO [main] o.e.L.Lexer [Lexer.java:70] Input ' ' matches DFA.
+2023-12-24 14:36:32,367 INFO [main] o.e.L.Lexer [Lexer.java:89]  的类型为WHITE_SPACE
+2023-12-24 14:36:32,367 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 's' matches DFA.
+2023-12-24 14:36:32,367 INFO [main] o.e.L.Lexer [Lexer.java:89] s的类型为ID
+2023-12-24 14:36:32,367 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'st' matches DFA.
+2023-12-24 14:36:32,367 INFO [main] o.e.L.Lexer [Lexer.java:89] st的类型为ID
+2023-12-24 14:36:32,367 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'ste' matches DFA.
+2023-12-24 14:36:32,367 INFO [main] o.e.L.Lexer [Lexer.java:89] ste的类型为ID
+2023-12-24 14:36:32,367 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'step' matches DFA.
+2023-12-24 14:36:32,368 INFO [main] o.e.L.Lexer [Lexer.java:89] step的类型为STEP
+2023-12-24 14:36:32,368 INFO [main] o.e.L.Lexer [Lexer.java:70] Input ' ' matches DFA.
+2023-12-24 14:36:32,368 INFO [main] o.e.L.Lexer [Lexer.java:89]  的类型为WHITE_SPACE
+2023-12-24 14:36:32,368 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'p' matches DFA.
+2023-12-24 14:36:32,368 INFO [main] o.e.L.Lexer [Lexer.java:89] p的类型为ID
+2023-12-24 14:36:32,368 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'pi' matches DFA.
+2023-12-24 14:36:32,368 INFO [main] o.e.L.Lexer [Lexer.java:89] pi的类型为CONST_ID
+2023-12-24 14:36:32,368 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '/' matches DFA.
+2023-12-24 14:36:32,368 INFO [main] o.e.L.Lexer [Lexer.java:89] /的类型为DIV
+2023-12-24 14:36:32,369 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '5' matches DFA.
+2023-12-24 14:36:32,369 INFO [main] o.e.L.Lexer [Lexer.java:89] 5的类型为CONST_ID
+2023-12-24 14:36:32,369 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '50' matches DFA.
+2023-12-24 14:36:32,369 INFO [main] o.e.L.Lexer [Lexer.java:89] 50的类型为CONST_ID
+2023-12-24 14:36:32,369 INFO [main] o.e.L.Lexer [Lexer.java:70] Input ' ' matches DFA.
+2023-12-24 14:36:32,369 INFO [main] o.e.L.Lexer [Lexer.java:89]  的类型为WHITE_SPACE
+2023-12-24 14:36:32,369 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'd' matches DFA.
+2023-12-24 14:36:32,369 INFO [main] o.e.L.Lexer [Lexer.java:89] d的类型为ID
+2023-12-24 14:36:32,369 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'dr' matches DFA.
+2023-12-24 14:36:32,369 INFO [main] o.e.L.Lexer [Lexer.java:89] dr的类型为ID
+2023-12-24 14:36:32,369 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'dra' matches DFA.
+2023-12-24 14:36:32,369 INFO [main] o.e.L.Lexer [Lexer.java:89] dra的类型为ID
+2023-12-24 14:36:32,370 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'draw' matches DFA.
+2023-12-24 14:36:32,370 INFO [main] o.e.L.Lexer [Lexer.java:89] draw的类型为DRAW
+2023-12-24 14:36:32,370 INFO [main] o.e.L.Lexer [Lexer.java:70] Input ' ' matches DFA.
+2023-12-24 14:36:32,370 INFO [main] o.e.L.Lexer [Lexer.java:89]  的类型为WHITE_SPACE
+2023-12-24 14:36:32,370 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '(' matches DFA.
+2023-12-24 14:36:32,370 INFO [main] o.e.L.Lexer [Lexer.java:89] (的类型为L_BRACKET
+2023-12-24 14:36:32,370 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'c' matches DFA.
+2023-12-24 14:36:32,371 INFO [main] o.e.L.Lexer [Lexer.java:89] c的类型为ID
+2023-12-24 14:36:32,371 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'co' matches DFA.
+2023-12-24 14:36:32,371 INFO [main] o.e.L.Lexer [Lexer.java:89] co的类型为ID
+2023-12-24 14:36:32,371 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'cos' matches DFA.
+2023-12-24 14:36:32,371 INFO [main] o.e.L.Lexer [Lexer.java:89] cos的类型为FUNC
+2023-12-24 14:36:32,371 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '(' matches DFA.
+2023-12-24 14:36:32,371 INFO [main] o.e.L.Lexer [Lexer.java:89] (的类型为L_BRACKET
+2023-12-24 14:36:32,371 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 't' matches DFA.
+2023-12-24 14:36:32,371 INFO [main] o.e.L.Lexer [Lexer.java:89] t的类型为T
+2023-12-24 14:36:32,371 INFO [main] o.e.L.Lexer [Lexer.java:70] Input ')' matches DFA.
+2023-12-24 14:36:32,371 INFO [main] o.e.L.Lexer [Lexer.java:89] )的类型为R_BRACKET
+2023-12-24 14:36:32,372 INFO [main] o.e.L.Lexer [Lexer.java:70] Input ',' matches DFA.
+2023-12-24 14:36:32,372 INFO [main] o.e.L.Lexer [Lexer.java:89] ,的类型为COMMA
+2023-12-24 14:36:32,372 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 's' matches DFA.
+2023-12-24 14:36:32,372 INFO [main] o.e.L.Lexer [Lexer.java:89] s的类型为ID
+2023-12-24 14:36:32,372 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'si' matches DFA.
+2023-12-24 14:36:32,372 INFO [main] o.e.L.Lexer [Lexer.java:89] si的类型为ID
+2023-12-24 14:36:32,372 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 'sin' matches DFA.
+2023-12-24 14:36:32,373 INFO [main] o.e.L.Lexer [Lexer.java:89] sin的类型为FUNC
+2023-12-24 14:36:32,373 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '(' matches DFA.
+2023-12-24 14:36:32,373 INFO [main] o.e.L.Lexer [Lexer.java:89] (的类型为L_BRACKET
+2023-12-24 14:36:32,373 INFO [main] o.e.L.Lexer [Lexer.java:70] Input 't' matches DFA.
+2023-12-24 14:36:32,373 INFO [main] o.e.L.Lexer [Lexer.java:89] t的类型为T
+2023-12-24 14:36:32,373 INFO [main] o.e.L.Lexer [Lexer.java:70] Input ')' matches DFA.
+2023-12-24 14:36:32,373 INFO [main] o.e.L.Lexer [Lexer.java:89] )的类型为R_BRACKET
+2023-12-24 14:36:32,373 INFO [main] o.e.L.Lexer [Lexer.java:70] Input ')' matches DFA.
+2023-12-24 14:36:32,373 INFO [main] o.e.L.Lexer [Lexer.java:89] )的类型为R_BRACKET
+2023-12-24 14:36:32,374 INFO [main] o.e.L.Lexer [Lexer.java:70] Input ';' matches DFA.
+2023-12-24 14:36:32,374 INFO [main] o.e.L.Lexer [Lexer.java:89] ;的类型为SEMICO
+2023-12-24 14:36:32,377 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '' matches DFA.
+2023-12-24 14:36:32,378 INFO [main] o.e.L.Lexer [Lexer.java:89] 的类型为WHITE_SPACE
+2023-12-24 14:36:32,378 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '
+' matches DFA.
+2023-12-24 14:36:32,378 INFO [main] o.e.L.Lexer [Lexer.java:89] 
+的类型为WHITE_SPACE
+2023-12-24 14:36:32,378 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '
+' matches DFA.
+2023-12-24 14:36:32,378 INFO [main] o.e.L.Lexer [Lexer.java:89] 
+的类型为WHITE_SPACE
+2023-12-24 14:36:32,378 INFO [main] o.e.L.Lexer [Lexer.java:70] Input '
+
+' matches DFA.
+2023-12-24 14:36:32,378 INFO [main] o.e.L.Lexer [Lexer.java:89] 
+
+的类型为WHITE_SPACE
+2023-12-24 14:36:41,552 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 55 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:36:41,553 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 55 completed successfully in 0.86 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:36:41,558 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=11.6 ms, state=CONNECTED}]
+2023-12-24 14:36:41,558 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:36:51,553 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 56 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:36:51,554 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 56 completed successfully in 0.76 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:36:51,558 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=9.5 ms, state=CONNECTED}]
+2023-12-24 14:36:51,558 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:37:01,554 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 57 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:37:01,554 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 57 completed successfully in 0.80 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:37:01,558 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=7.8 ms, state=CONNECTED}]
+2023-12-24 14:37:01,559 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:37:11,555 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 58 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:37:11,557 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 58 completed successfully in 1.49 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:37:11,559 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=6.7 ms, state=CONNECTED}]
+2023-12-24 14:37:11,559 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:37:21,558 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 59 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:37:21,559 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 59 completed successfully in 0.80 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:37:21,560 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=5.6 ms, state=CONNECTED}]
+2023-12-24 14:37:21,560 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:37:31,559 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 60 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:37:31,560 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 60 completed successfully in 0.80 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:37:31,561 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=4.8 ms, state=CONNECTED}]
+2023-12-24 14:37:31,562 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:37:41,561 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=4.8 ms, state=CONNECTED}]
+2023-12-24 14:37:41,561 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 61 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:37:41,562 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:37:41,562 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 61 completed successfully in 0.98 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:37:51,561 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=4.1 ms, state=CONNECTED}]
+2023-12-24 14:37:51,562 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:37:51,562 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 62 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:37:51,562 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 62 completed successfully in 0.61 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:38:01,562 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 63 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:38:01,563 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=3.5 ms, state=CONNECTED}]
+2023-12-24 14:38:01,563 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:38:01,563 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 63 completed successfully in 1.07 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:38:11,565 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 64 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:38:11,565 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=3.1 ms, state=CONNECTED}]
+2023-12-24 14:38:11,565 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:38:11,566 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 64 completed successfully in 1.55 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:38:21,565 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=3.0 ms, state=CONNECTED}]
+2023-12-24 14:38:21,565 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:38:21,566 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 65 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:38:21,566 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 65 completed successfully in 0.52 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:38:31,566 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=2.6 ms, state=CONNECTED}]
+2023-12-24 14:38:31,566 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:38:31,567 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 66 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:38:31,568 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 66 completed successfully in 0.79 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:38:41,567 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=2.3 ms, state=CONNECTED}]
+2023-12-24 14:38:41,567 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:38:41,569 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 67 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:38:41,569 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 67 completed successfully in 0.67 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:38:51,567 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=2.0 ms, state=CONNECTED}]
+2023-12-24 14:38:51,567 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:38:51,579 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 68 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:38:51,579 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 68 completed successfully in 0.77 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:39:01,566 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.9 ms, state=CONNECTED}]
+2023-12-24 14:39:01,566 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:39:01,592 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 69 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:39:01,593 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 69 completed successfully in 0.85 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:39:11,566 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.8 ms, state=CONNECTED}]
+2023-12-24 14:39:11,567 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:39:11,603 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 70 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:39:11,604 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 70 completed successfully in 1.16 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:39:21,567 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.8 ms, state=CONNECTED}]
+2023-12-24 14:39:21,567 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:39:21,607 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 71 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:39:21,608 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 71 completed successfully in 0.90 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:39:31,567 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.7 ms, state=CONNECTED}]
+2023-12-24 14:39:31,568 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:39:31,613 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 72 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:39:31,614 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 72 completed successfully in 0.74 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:39:41,569 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.6 ms, state=CONNECTED}]
+2023-12-24 14:39:41,569 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:39:41,616 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 73 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:39:41,617 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 73 completed successfully in 1.17 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:39:51,570 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.6 ms, state=CONNECTED}]
+2023-12-24 14:39:51,570 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:39:51,622 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 74 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:39:51,623 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 74 completed successfully in 0.81 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:40:01,571 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.6 ms, state=CONNECTED}]
+2023-12-24 14:40:01,571 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:40:01,626 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 75 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:40:01,626 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 75 completed successfully in 1.06 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:40:11,572 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.6 ms, state=CONNECTED}]
+2023-12-24 14:40:11,572 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:40:11,632 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 76 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:40:11,633 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 76 completed successfully in 0.86 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:40:21,573 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.5 ms, state=CONNECTED}]
+2023-12-24 14:40:21,573 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:40:21,637 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 77 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:40:21,638 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 77 completed successfully in 0.98 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:40:31,573 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.5 ms, state=CONNECTED}]
+2023-12-24 14:40:31,573 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:40:31,648 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 78 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:40:31,649 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 78 completed successfully in 1.00 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:40:41,573 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.5 ms, state=CONNECTED}]
+2023-12-24 14:40:41,574 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:40:41,653 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 79 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:40:41,654 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 79 completed successfully in 0.95 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:40:51,576 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.5 ms, state=CONNECTED}]
+2023-12-24 14:40:51,576 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:40:51,669 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 80 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:40:51,670 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 80 completed successfully in 0.86 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:41:01,577 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.5 ms, state=CONNECTED}]
+2023-12-24 14:41:01,578 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:41:01,681 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 81 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:41:01,681 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 81 completed successfully in 0.74 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:41:11,578 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.4 ms, state=CONNECTED}]
+2023-12-24 14:41:11,578 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:41:11,686 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 82 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:41:11,687 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 82 completed successfully in 1.14 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:41:21,579 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.5 ms, state=CONNECTED}]
+2023-12-24 14:41:21,580 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:41:21,699 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 83 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:41:21,700 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 83 completed successfully in 1.37 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:41:31,580 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.6 ms, state=CONNECTED}]
+2023-12-24 14:41:31,581 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:41:31,703 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 84 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:41:31,704 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 84 completed successfully in 0.79 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:41:41,581 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.5 ms, state=CONNECTED}]
+2023-12-24 14:41:41,581 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:41:41,717 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 85 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:41:41,718 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 85 completed successfully in 1.17 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:41:51,582 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.5 ms, state=CONNECTED}]
+2023-12-24 14:41:51,582 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:41:51,724 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 86 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:41:51,725 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 86 completed successfully in 1.08 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:42:01,583 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.5 ms, state=CONNECTED}]
+2023-12-24 14:42:01,583 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:42:01,740 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 87 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:42:01,741 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 87 completed successfully in 0.88 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:42:11,583 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.5 ms, state=CONNECTED}]
+2023-12-24 14:42:11,584 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:42:11,754 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 88 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:42:11,755 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 88 completed successfully in 0.79 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:42:21,584 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.4 ms, state=CONNECTED}]
+2023-12-24 14:42:21,584 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:42:21,767 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 89 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:42:21,768 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 89 completed successfully in 0.99 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:42:31,585 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.5 ms, state=CONNECTED}]
+2023-12-24 14:42:31,585 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:42:31,772 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 90 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:42:31,773 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 90 completed successfully in 0.86 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:42:41,586 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.4 ms, state=CONNECTED}]
+2023-12-24 14:42:41,586 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:42:41,785 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 91 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:42:41,785 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 91 completed successfully in 0.70 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:42:51,588 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.3 ms, state=CONNECTED}]
+2023-12-24 14:42:51,588 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:42:51,795 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 92 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:42:51,796 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 92 completed successfully in 0.94 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:43:01,589 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.4 ms, state=CONNECTED}]
+2023-12-24 14:43:01,590 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:43:01,804 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 93 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:43:01,805 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 93 completed successfully in 0.96 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:43:11,589 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.4 ms, state=CONNECTED}]
+2023-12-24 14:43:11,589 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:43:11,809 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 94 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:43:11,809 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 94 completed successfully in 0.92 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:43:21,591 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.4 ms, state=CONNECTED}]
+2023-12-24 14:43:21,591 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:43:21,814 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 95 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:43:21,815 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 95 completed successfully in 1.25 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:43:31,591 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.5 ms, state=CONNECTED}]
+2023-12-24 14:43:31,592 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:43:31,823 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 96 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:43:31,825 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 96 completed successfully in 1.14 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:43:41,592 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.6 ms, state=CONNECTED}]
+2023-12-24 14:43:41,593 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:43:41,837 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 97 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:43:41,838 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 97 completed successfully in 1.24 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:43:51,594 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.7 ms, state=CONNECTED}]
+2023-12-24 14:43:51,594 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:43:51,847 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 98 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:43:51,849 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 98 completed successfully in 1.48 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:44:01,594 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=1.7 ms, state=CONNECTED}]
+2023-12-24 14:44:01,595 DEBUG [cluster-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.cluster [SLF4JLogger.java:56] Checking status of localhost:27017
+2023-12-24 14:44:01,857 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Sending command '{"ismaster": 1, "$db": "admin"}' with request id 99 to database admin on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
+2023-12-24 14:44:01,858 DEBUG [cluster-rtt-ClusterId{value='6587d16f3e64b26a244e76bd', description='null'}-localhost:27017] o.m.d.p.command [SLF4JLogger.java:56] Execution of command with request id 99 completed successfully in 0.90 ms on connection [connectionId{localValue:1, serverValue:64}] to server localhost:27017
